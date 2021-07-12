@@ -31,7 +31,7 @@ abstract class Model
         }
 
         return $var;
-        $req->closeCursor();
+        $req->closeCursor(); //monter ligne 32
 
 
     }
@@ -47,7 +47,7 @@ abstract class Model
       }
   
       return $var;
-      $req->closeCursor();
+      $req->closeCursor();//monter ligne 48
     }
 
 

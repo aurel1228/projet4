@@ -4,7 +4,7 @@
 
 
 
-								<h4 class="title"><a href="post&id=<?= $article->id() ?>"><b><?= $article->title() ?></b></a></h4>
+								<h4 class="title"><a href="post&id=<?= $article->id() ?>"><b><?= $article->title() ?></b></a></h4> 
 
         <?php endforeach ?>
 
