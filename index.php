@@ -6,6 +6,8 @@ $router = new Router();
 
 $router->routeReq();
 
+header('Location: http://www.webaurelien.fr/projet4');
+
 
 
 
