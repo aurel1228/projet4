@@ -1,33 +1,24 @@
-<?php session_start() ?>
-<?php ob_start() ?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta name="identifier-url" content="http://www.webaurelien.fr/projet4/">
-        <link rel="shortcut icon" href="../images/favicon.ico" type = "image/x-icon" />   
-		<link rel="stylesheet" href="../style/style2.css">
-        <script src="https://cdn.tiny.cloud/1/4n48ygl7rd6gd8hympzb7fmvbftukkwjxtn6n5306r6pycbe/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-        <script src="../js/fr_FR.js"></script>
-        <script>
-        tinymce.init({
-        selector: '#textarea',
-        language :'fr_FR',
-        });
-        </script>
-<header>
-    <div class="container">
-      <h1 class="logo"></h1>
+        <link rel="shortcut icon" href="images/favicon.ico" type = "image/x-icon" />   
+		<link rel="stylesheet" href="public/css/style.css">
+		<title>Blog de Jean Forteroche</title>
+    </head>
+<body>
 
-      <nav>
-        <ul>
 
-          <li><a href="index.php">Accueil</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
+        <div class="navbar">
+            <a>Contact</a>
+            <a>Mes Billets</a>
+            <a href="index.php">Accueil</a>
+            <a href="post&create">Créer un article</a>
+      </div>
+
 
 
 <h1>Bienvenue sur le blog de Jean Forteroche</h1>

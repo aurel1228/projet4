@@ -1,81 +1,94 @@
-body {
-  background-image:url(../images/fond.png);
-  background-repeat:no-repeat;
-  background-color: #8687D7;
-  }
+body
+{
+  color:black;
+}
+
+
+.navbar 
+{
+  margin-left: -10px;
+  background-color: #6e6b6a;
+  position: fixed;
+  margin-bottom: 50px; 
+  top: 0; 
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a 
+{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  padding: 20px ;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 80px;
+}
+
+
+.navbar a:hover 
+{
+  background: #ddd;
+  color: black;
+}
 
 h1{
-  margin-left: 500px;
+  margin-top: 100px;
+  text-align: center;
+  text-decoration: underline;
+  
 }
 
-.articleposition
-{
-  margin-top: 1000px;
-  text-align:center;
-  font-size: 1.em;
-}
-.container {
-	width: 80%;
-	margin: 0 auto;
+h2{
+  margin-top: 110px;
+  text-align: center;
+  
+  text-decoration: underline;
 }
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
+h3{
+  margin-top: 110px;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.logo {
-  float: left;
-  padding: 10px 0;
+#biographie{
+  color: white;
+  text-align: center;
+  margin:auto;
+  width: 600px;
+  height: 200px;
+  border-width : 20px;
+  border-color : green;
+  border-style : ridge;
+  background-image:url(../images/fond.jpg);
+  
 }
 
-nav {
-  float: right;
+#billetintro{
+  color: white;
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  margin:auto;
+  border-width : 10px;
+  border-color : green;
+  border-style : ridge;
+  background-image:url(../images/fond.jpg);
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+#fonctionnement{
+  color: white;
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  margin:auto;
+  border-width : 10px;
+  border-color : green;
+  border-style : ridge;
+  background-image:url(../images/fond.jpg);
 }
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
-  position: relative;
-}
-
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
 
 #container{
   width:400px;
@@ -84,7 +97,6 @@ nav a:hover::before {
 }
 
 form {
-  width:100%;
   padding: 30px;
   border: 1px solid #f1f1f1;
   background: #fff;
@@ -105,6 +117,71 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
+button {
+  background-color: #53af57;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  background-color: white;
+  color: #53af57;
+  border: 1px solid #53af57;
+}
+
+.error{
+  position:absolute;
+  margin-top: 10px;
+  margin-left:45%;
+}
+
+.list{
+  margin-top: 200px;
+}
+
+#wysibb
+{
+  width: 200px;
+  height: 500px;
+}
+
+
+body{
+  background: #67BE4B;
+}
+#container{
+  width:400px;
+  margin:0 auto;
+  margin-top:10%;
+}
+/* Bordered form */
+form {
+  width:100%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
 input[type=submit] {
   background-color: #53af57;
   color: white;
@@ -118,10 +195,4 @@ input[type=submit]:hover {
   background-color: white;
   color: #53af57;
   border: 1px solid #53af57;
-}
-
-
-h1{
-  text-align: center;
- 
 }

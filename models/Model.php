@@ -7,7 +7,7 @@ abstract class Model
 
     private static function setBdd(){
         self::$_bdd = new PDO('mysql:host=db5003903172.hosting-data.io;dbname=projet4;charset=utf8', 'dbu630809', 'Cx24du709');
-
+        
         self::$_bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     }
 
@@ -31,7 +31,7 @@ abstract class Model
         }
 
         return $var;
-        $req->closeCursor(); //monter ligne 32
+        $req->closeCursor();
 
 
     }
@@ -47,7 +47,7 @@ abstract class Model
       }
   
       return $var;
-      $req->closeCursor();//monter ligne 48
+      $req->closeCursor();
     }
 
 
@@ -60,19 +60,6 @@ abstract class Model
     $req->closeCursor();
   }
 
-
-  public function getlogin()
-  {
-    if(isset($_REQUEST['username']) && isset($_REQUEST['password'])){
-
-      if($_REQUEST['username']=='admin' && $_REQUEST['password']=='test'){
-        return 'login';
-      }
-      else{
-        return 'invalid user';
-      }
-    }
-  }
 
 
 

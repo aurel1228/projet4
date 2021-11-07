@@ -11,30 +11,19 @@
 <body>
 
 
-<header>
-    <div class="container">
-      <h1 class="logo"></h1>
 
-      <nav>
-        <ul>
-          <li><a href="index.php">Accueil</a></li>
-          <li><a href="#bas">billets</a></li>
-          <li><a href="views/viewLogin.php">Connexion</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <div class="navbar">
+            <a>Contact</a>
+            <a>Mes Billets</a>
+            <a href="index.php">Accueil</a>
+            <a href="post&create">Créer un article</a>
+      </div>
+
 
 
 <h1>Bienvenue sur le blog de Jean Forteroche</h1>
 
-
-
-<div class="articleposition">
-  <h2>Mes Derniers billets</h2>
 <?= $content ?>
-<a id="bas"></a>
-</div>
 
 
 </body>
